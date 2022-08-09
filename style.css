@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color:#ccc;
+}
 .menu{
     background-color: indigo;
 }
@@ -28,4 +31,17 @@
 h1{
     text-align: center;
     margin: 30px 0;
+}
+.drop{
+    position: relative;
+}
+.drop::after{
+    content: "";
+    border: 8px solid #ccc;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
 }
